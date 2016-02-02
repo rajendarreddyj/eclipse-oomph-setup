@@ -41,6 +41,12 @@
       storageURI="scope://Workspace"/>
   <setupTask
       xsi:type="setup.p2:P2Task">
+    <repository
+        url="http://feeling.sourceforge.net/update/"/>
+    <repository
+        url="http://subclipse.tigris.org/update_1.12.x"/>
+    <repository
+        url="http://download.eclipse.org/eclipse/updates/4.5/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
@@ -76,10 +82,8 @@
     </workingSet>
     <description>The dynamic working sets for ${scope.project.label}</description>
   </setupTask>
-  <stream name="master"
-      label="Master"/>
   <logicalProjectContainer
       xsi:type="setup:ProjectCatalog"
       href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
-  <description>myeclipse provides cool stuff.</description>
+  <description>This eclipse installation provides cool stuff for Java/Java EE Development.</description>
 </setup:Project>

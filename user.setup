@@ -2753,14 +2753,24 @@
       xsi:type="setup:VariableTask"
       type="FOLDER"
       name="install.root"
-      value="C:\Users\JAGAPR1"
-      defaultValue="C:\Users\JAGAPR1"
+      value=""
       label="Root install folder">
     <description>The root install folder where all the products are installed</description>
+  </setupTask>
+   <setupTask
+      xsi:type="setup:VariableTask"
+      type="FOLDER"
+      name="workspace.container.root"
+      value=""
+      label="Root workspace-container folder">
+    <description>The root workspace-container folder where all the workspaces are located</description>
   </setupTask>
   <attributeRule
       attributeURI="http://www.eclipse.org/oomph/setup/1.0#//InstallationTask/location"
       value="${install.root/}${installation.id}"/>
+  <attributeRule
+      attributeURI="http://www.eclipse.org/oomph/setup/1.0#//WorkspaceTask/location"
+      value="${workspace.container.root/}${workspace.id}"/>    
   <acceptedLicense>DEFAULT_LICENSE Marker to remember license pre-prompting</acceptedLicense>
   <acceptedLicense>6a3d083ad2bd7d3a80ee293235f8c5b1 Eclipse Foundation Software User Agreement</acceptedLicense>
   <acceptedLicense>abc76a6cc9d06e4684ff61ed74a972c Eclipse Foundation Software User Agreement</acceptedLicense>
