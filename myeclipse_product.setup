@@ -34,6 +34,9 @@
           name="org.eclipse.platform.ide"
           versionRange="[4.5.0,5.0.0)"/>
       <requirement
+          name="org.eclipse.oomph.setup"
+          versionRange="[1.2.0,2.0.0)"/>
+      <requirement
           name="org.eclipse.rcp"
           versionRange="[4.5.0,5.0.0)"/>
       <requirement
@@ -41,15 +44,6 @@
           versionRange="[3.11.0,4.0.0)"/>
       <requirement
           name="org.eclipse.jst.enterprise_ui.feature.feature.group"
-          versionRange="[3.7.0,4.0.0)"/>
-      <requirement
-          name="org.eclipse.wst.xml_ui.feature.feature.group"
-          versionRange="[3.7.0,4.0.0)"/>
-      <requirement
-          name="org.eclipse.wst.jsdt.feature.feature.group"
-          versionRange="[1.6.0,2.0.0)"/>
-      <requirement
-          name="org.eclipse.wst.web_ui.feature.feature.group"
           versionRange="[3.7.0,4.0.0)"/>
       <requirement
           name="org.eclipse.jst.web_ui.feature.feature.group"
@@ -70,8 +64,14 @@
           name="org.eclipse.m2e.wtp.feature.feature.group"
           versionRange="[1.2.0,2.0.0)"/>
       <requirement
-          name="org.eclipse.oomph.setup"
-          versionRange="[1.2.0,2.0.0)"/>
+          name="org.eclipse.wst.jsdt.feature.feature.group"
+          versionRange="[1.6.0,2.0.0)"/>
+      <requirement
+          name="org.eclipse.wst.xml_ui.feature.feature.group"
+          versionRange="[3.7.0,4.0.0)"/>
+      <requirement
+          name="org.eclipse.wst.web_ui.feature.feature.group"
+          versionRange="[3.7.0,4.0.0)"/>
       <requirement
           name="org.eclipse.osgi.compatibility.plugins.feature.feature.group"
           versionRange="[1.0.0,2.0.0)"/>
@@ -98,6 +98,81 @@
           url="http://feeling.sourceforge.net/update/"/>
     </setupTask>
     <description>This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
+  </version>
+  <version name="Neon">
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="${scope.product.label} (${scope.product.version.label})">
+      <requirement
+          name="org.eclipse.platform"
+          versionRange="[4.6.0,5.0.0)"/>
+      <requirement
+          name="org.eclipse.platform.ide"
+          versionRange="[4.6.0,5.0.0)"/>
+      <requirement
+          name="org.eclipse.oomph.setup"
+          versionRange="[1.3.0,2.0.0)"/>
+      <requirement
+          name="org.eclipse.rcp"
+          versionRange="[4.6.0,5.0.0)"/>
+      <requirement
+          name="org.eclipse.jdt.feature.group"
+          versionRange="[3.12.0,4.0.0)"/>
+      <requirement
+          name="org.eclipse.jst.enterprise_ui.feature.feature.group"
+          versionRange="[3.7.0,4.0.0)"/>
+      <requirement
+          name="org.eclipse.jst.web_ui.feature.feature.group"
+          versionRange="[3.7.0,4.0.0)"/>
+      <requirement
+          name="org.eclipse.jst.server_adapters.feature.feature.group"
+          versionRange="[3.2.0,4.0.0)"/>
+      <requirement
+          name="org.eclipse.jst.server_adapters.ext.feature.feature.group"
+          versionRange="[3.3.0,4.0.0)"/>
+      <requirement
+          name="org.eclipse.jst.server_ui.feature.feature.group"
+          versionRange="[3.4.0,4.0.0)"/>
+      <requirement
+          name="org.eclipse.m2e.feature.feature.group"
+          versionRange="[1.7.0,2.0.0)"/>
+      <requirement
+          name="org.eclipse.m2e.wtp.feature.feature.group"
+          versionRange="[1.3.0,2.0.0)"/>
+      <requirement
+          name="org.eclipse.wst.jsdt.feature.feature.group"
+          versionRange="[1.6.0,2.0.0)"/>
+      <requirement
+          name="org.eclipse.wst.xml_ui.feature.feature.group"
+          versionRange="[3.8.0,4.0.0)"/>
+      <requirement
+          name="org.eclipse.wst.web_ui.feature.feature.group"
+          versionRange="[3.8.0,4.0.0)"/>
+      <requirement
+          name="org.eclipse.osgi.compatibility.plugins.feature.feature.group"
+          versionRange="[1.0.0,2.0.0)"/>
+      <requirement
+          name="org.tigris.subversion.subclipse.feature.group"
+          versionRange="[1.10.0,2.0.0)"/>
+      <requirement
+          name="org.tigris.subversion.clientadapter.feature.feature.group"
+          versionRange="[1.10.0,2.0.0)"/>
+      <requirement
+          name="org.tmatesoft.svnkit.feature.group"
+          versionRange="[1.8.0,2.0.0)"/>
+      <requirement
+          name="org.sf.feeling.decompiler.feature.group"
+          versionRange="[1.0.0,2.0.0)"
+          filter="(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32))"/>
+      <repository
+          url="http://download.eclipse.org/releases/neon"/>
+      <repository
+          url="http://download.eclipse.org/eclipse/updates/4.5/"/>
+      <repository
+          url="http://feeling.sourceforge.net/update/"/>
+      <repository
+          url="http://subclipse.tigris.org/update_1.12.x"/>
+    </setupTask>
   </version>
   <description>This eclipse installation provides cool stuff for Java/Java EE Development.</description>
 </setup:Product>
