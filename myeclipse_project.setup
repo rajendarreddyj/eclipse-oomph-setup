@@ -42,8 +42,6 @@
   <setupTask
       xsi:type="setup.p2:P2Task">
     <repository
-        url="http://feeling.sourceforge.net/update/"/>
-    <repository
         url="http://subclipse.tigris.org/update_1.12.x"/>
     <repository
         url="http://download.eclipse.org/eclipse/updates/4.5/"/>
