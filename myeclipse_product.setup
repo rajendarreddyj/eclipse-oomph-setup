@@ -24,49 +24,31 @@
   <setupTask
       xsi:type="setup.p2:P2Task">
     <requirement
+        name="org.eclipse.epp.package.jee.feature.feature.group"/>
+    <requirement
         name="org.eclipse.oomph.setup.feature.group"/>
     <requirement
-        name="org.eclipse.platform"/>
+        name="org.eclipse.team.svn.feature.group"/>
     <requirement
-        name="org.eclipse.platform.ide"/>
+        name="org.polarion.eclipse.team.svn.connector.feature.group"/>
     <requirement
-        name="org.eclipse.rcp"/>
+        name="org.polarion.eclipse.team.svn.connector.svnkit18.feature.group"/>
     <requirement
-        name="org.eclipse.jdt.feature.group"/>
-    <requirement
-        name="org.eclipse.jst.enterprise_ui.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.jst.web_ui.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.jst.server_adapters.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.jst.server_adapters.ext.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.jst.server_ui.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.m2e.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.m2e.wtp.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.wst.jsdt.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.wst.xml_ui.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.wst.web_ui.feature.feature.group"/>
-    <requirement
-        name="org.tigris.subversion.subclipse.feature.group"/>
-    <requirement
-        name="org.tigris.subversion.clientadapter.feature.feature.group"/>
-    <requirement
-        name="org.tigris.subversion.clientadapter.svnkit.feature.feature.group"/>
+        name="org.springframework.ide.eclipse.feature.feature.group"/>
     <requirement
         name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group"/>
+    <requirement
+        name="org.sf.feeling.decompiler.feature.group"/>
     <repository
         url="${oomph.update.url}"/>
     <repository
-        url="http://subclipse.tigris.org/update_1.12.x"/>
+        url="http://community.polarion.com/projects/subversive/download/eclipse/5.0/update-site/"/>
+    <repository
+        url="http://dist.springsource.com/release/TOOLS/update/e4.5/"/>
     <repository
         url="http://rajendarreddyj.github.io/eclipse-weblogic-plugin/update-site"/>
+    <repository
+        url="http://rajendarreddyj.github.io/Eclipse-Class-Decompiler/update"/>
   </setupTask>
   <setupTask
       xsi:type="setup:EclipseIniTask"
@@ -75,10 +57,23 @@
       vm="true"/>
   <setupTask
       xsi:type="setup:EclipseIniTask"
+      option="--launcher.GTK_version"
+      value="2">
+    <description>GTK Bug Force GTK 2 for Now</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
       option="-Xmx"
       value="1024m"
       vm="true">
     <description>Set the heap space needed to work with the projects of ${scope.product.label}</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
+      option="-Djava.library.path"
+      value="=/usr/lib/x86_64-linux-gnu/jni"
+      vm="true">
+    <description>Set JAVAHL library of ${scope.product.label}</description>
   </setupTask>
   <version name="mars"
       label="Mars"
@@ -86,12 +81,10 @@
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="">
-      <requirement
-          name="org.springframework.ide.eclipse.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/releases/mars"/>
       <repository
-          url="http://dist.springsource.com/release/TOOLS/update/e4.5/"/>
+          url="http://download.eclipse.org/technology/epp/packages/mars.oomph"/>
     </setupTask>
     <description>This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
   </version>
@@ -101,6 +94,8 @@
         label="">
       <repository
           url="http://download.eclipse.org/releases/neon"/>
+      <repository
+          url="http://download.eclipse.org/technology/epp/packages/neon.oomph"/>
     </setupTask>
   </version>
   <description>This eclipse installation provides cool stuff for Java/Java EE Development.</description>
