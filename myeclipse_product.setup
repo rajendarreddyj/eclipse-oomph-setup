@@ -42,8 +42,6 @@
     <repository
         url="${oomph.update.url}"/>
     <repository
-        url="http://community.polarion.com/projects/subversive/download/eclipse/5.0/update-site/"/>
-    <repository
         url="http://dist.springsource.com/release/TOOLS/update/e4.5/"/>
     <repository
         url="http://rajendarreddyj.github.io/eclipse-weblogic-plugin/update-site"/>
@@ -85,6 +83,8 @@
           url="http://download.eclipse.org/releases/mars"/>
       <repository
           url="http://download.eclipse.org/technology/epp/packages/mars.oomph"/>
+      <repository
+          url="http://community.polarion.com/projects/subversive/download/eclipse/5.0/update-site/"/>
     </setupTask>
     <description>This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
   </version>
@@ -96,6 +96,8 @@
           url="http://download.eclipse.org/releases/neon"/>
       <repository
           url="http://download.eclipse.org/technology/epp/packages/neon.oomph"/>
+      <repository
+          url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/"/>
     </setupTask>
   </version>
   <description>This eclipse installation provides cool stuff for Java/Java EE Development.</description>
