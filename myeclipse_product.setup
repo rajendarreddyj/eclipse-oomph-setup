@@ -47,6 +47,8 @@
         name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group"/>
     <requirement
         name="org.sf.feeling.decompiler.feature.group"/>
+    <requirement
+        name="org.eclipse.buildship.feature.group"/>
     <repository
         url="${oomph.update.url}"/>
     <repository
@@ -55,6 +57,8 @@
         url="http://rajendarreddyj.github.io/eclipse-weblogic-plugin/update-site"/>
     <repository
         url="http://opensource.cpupk.com/decompiler/update/"/>
+    <repository
+        url="http://download.eclipse.org/buildship/updates/e46/releases"/>
   </setupTask>
   <setupTask
       xsi:type="setup:EclipseIniTask"
