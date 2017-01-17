@@ -30,12 +30,8 @@
     <requirement name="org.eclipse.buildship.feature.group" />
     <repository url="${oomph.update.url}" />
     <repository
-      url="http://dist.springsource.com/release/TOOLS/update/e4.5/" />
-    <repository
-      url="http://rajendarreddyj.github.io/eclipse-weblogic-plugin/update-site" />
+      url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site" />
     <repository url="http://opensource.cpupk.com/decompiler/update/" />
-    <repository
-      url="http://download.eclipse.org/buildship/updates/e46/releases" />
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Doomph.setup"
     value="=true" vm="true" />
@@ -52,7 +48,8 @@
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Djava.library.path"
     value="=/usr/lib/x86_64-linux-gnu/jni" vm="true">
-    <description>Set JAVAHL library of ${scope.product.label}</description>
+    <description>Set JAVAHL library of ${scope.product.label}
+    </description>
   </setupTask>
   <version name="mars" label="Mars" requiredJavaVersion="1.7">
     <setupTask xsi:type="setup.p2:P2Task"
@@ -62,6 +59,10 @@
         url="http://download.eclipse.org/technology/epp/packages/mars/" />
       <repository
         url="http://community.polarion.com/projects/subversive/download/eclipse/5.0/update-site/" />
+      <repository
+        url="http://dist.springsource.com/release/TOOLS/update/e4.5/" />
+      <repository
+        url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
     <description>
       This Eclipse installation provides cool stuff for
@@ -150,9 +151,15 @@
         url="http://download.eclipse.org/technology/epp/packages/neon/" />
       <repository
         url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
+      <repository
+        url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
+      <repository
+        url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
-    <description>This Eclipse installation provides cool stuff for
-      Java/Java EE Development.</description>
+    <description>
+      This Eclipse installation provides cool stuff for
+      Java/Java EE Development.
+    </description>
   </version>
   <version name="Oxygen" label="Oxygen" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task"
@@ -236,9 +243,15 @@
         url="http://download.eclipse.org/technology/epp/packages/oxygen/" />
       <repository
         url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
+      <repository
+        url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
+      <repository
+        url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
-    <description>This Eclipse installation provides cool stuff for
-      Java/Java EE Development.</description>
+    <description>
+      This Eclipse installation provides cool stuff for
+      Java/Java EE Development.
+    </description>
   </version>
   <version name="Spring" label="Spring(Neon)"
     requiredJavaVersion="1.8">
@@ -354,8 +367,6 @@
         name="org.springframework.ide.eclipse.cft.feature.feature.group" />
       <requirement
         name="org.springframework.ide.eclipse.mylyn.feature.feature.group" />
-      <requirement
-        name="io.github.philwebb.eclipse.theme.cupertino.feature.feature.group" />
       <requirement name="org.springsource.sts.feature.group" />
       <requirement name="com.ianbrandt.tools.m2e.mdp.feature.feature.group" />
       <requirement name="org.sonatype.m2e.buildhelper.feature.feature.group" />
@@ -367,6 +378,10 @@
         url="http://download.eclipse.org/technology/epp/packages/neon/" />
       <repository
         url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
+      <repository
+        url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
+      <repository
+        url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx"
       value="2048m" vm="true">
@@ -378,8 +393,10 @@
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xms"
       value="512m" vm="true" />
-    <description>This Eclipse installation provides cool stuff for
-      Java/Java EE/Spring Development.</description>
+    <description>
+      This Eclipse installation provides cool stuff for
+      Java/Java EE/Spring Development.
+    </description>
   </version>
   <description>
     This eclipse installation provides cool stuff for
