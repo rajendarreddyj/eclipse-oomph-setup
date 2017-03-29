@@ -23,7 +23,7 @@
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Xms" value="512m" vm="true" />
   <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="1024m" vm="true">
-    <description> Set the heap space needed to work with the projects of ${scope.product.label} </description>
+    <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Djava.library.path" value="=/usr/lib/x86_64-linux-gnu/jni"
     vm="true">
@@ -106,7 +106,10 @@
       <repository url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
-    <description> This Eclipse installation provides cool stuff for Java/Java EE Development. </description>
+    <setupTask xsi:type="setup:EclipseIniTask" option="--add-modules" value="=java.se.ee" vm="true">
+      <description>Java 9 modules</description>
+    </setupTask>
+    <description> This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
   </version>
   <version name="Neon" label="Neon (Eclipse IDE for Java  EE Developers)" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java EE Developers (Neon)">
@@ -188,7 +191,7 @@
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
       <repository url="http://download.eclipse.org/releases/neon/201612211000" />
     </setupTask>
-    <description> This Eclipse installation provides cool stuff for Java/Java EE Development. </description>
+    <description> This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
   </version>
   <version name="Spring" label="Spring (Neon-Eclipse IDE for Java EE Developers)" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java EE Developers with Spring (Neon)">
@@ -290,9 +293,9 @@
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="2048m" vm="true">
-      <description> Set the heap space needed to work with the projects of ${scope.product.label} </description>
+      <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
     </setupTask>
-    <description> This Eclipse installation provides cool stuff for Java/Java EE/Spring Development. </description>
+    <description> This Eclipse installation provides cool stuff for Java/Java EE/Spring Development.</description>
   </version>
   <version name="JBossIDE" label="JBossIDE (Neon - Eclipse IDE for Java EE Developers)" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java EE Developers with JBoss Tools (Neon)">
@@ -396,9 +399,9 @@
       <repository url="https://devstudio.redhat.com/10.0/stable/updates/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="2048m" vm="true">
-      <description> Set the heap space needed to work with the projects of ${scope.product.label} </description>
+      <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
     </setupTask>
-    <description> This Eclipse installation provides cool stuff for Java Development with JBoss Tools </description>
+    <description> This Eclipse installation provides cool stuff for Java Development with JBoss Tools</description>
   </version>
   <version name="dbeaverce" label="dbeaver Community Edition ( Neon - Eclipse Platform)" requiredJavaVersion="1.7">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse Platform with dbeaver Community Edition (Neon)">
@@ -418,7 +421,7 @@
       <repository url="http://dbeaver.jkiss.org/update/latest/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
-      <description> Set the heap space needed to work with the projects of ${scope.product.label} </description>
+      <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
     </setupTask>
   </version>
   <version name="pydev" label="Pydev (Neon - pydev IDE for python/jython Developers)" requiredJavaVersion="1.8">
@@ -453,7 +456,7 @@
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
-      <description> Set the heap space needed to work with the projects of ${scope.product.label} </description>
+      <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
     </setupTask>
     <description></description>
   </version>
@@ -488,7 +491,7 @@
       <repository url="http://www.epic-ide.org/updates/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
-      <description> Set the heap space needed to work with the projects of ${scope.product.label} </description>
+      <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
     </setupTask>
     <description></description>
   </version>
@@ -512,7 +515,7 @@
       <repository url="http://dist.springsource.com/release/TOOLS/update/e4.5/" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
-    <description> This Eclipse installation provides cool stuff for Java/Java EE Development. </description>
+    <description> This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
   </version>
-  <description> This eclipse installation provides cool stuff for Java/Java EE Development. </description>
+  <description> This eclipse installation provides cool stuff for Java/Java EE Development.</description>
 </setup:Product>
