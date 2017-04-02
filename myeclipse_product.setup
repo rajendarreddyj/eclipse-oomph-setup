@@ -175,9 +175,6 @@
       <requirement name="org.eclipse.wst.web_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xsl.feature.feature.group" />
-      <requirement name="epp.package.jee" versionRange="[4.6.0,4.7.0)" />
-      <requirement name="org.eclipse.platform.feature.group" versionRange="[4.6.0,4.7.0)" />
-      <requirement name="org.eclipse.rcp.feature.group" versionRange="[4.6.0,4.7.0)" />
       <requirement name="org.springframework.ide.eclipse.feature.feature.group" />
       <requirement name="org.eclipse.team.svn.feature.group" />
       <requirement name="org.polarion.eclipse.team.svn.connector.feature.group" />
@@ -185,11 +182,11 @@
       <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" />
       <requirement name="org.sf.feeling.decompiler.feature.group" />
       <requirement name="org.eclipse.buildship.feature.group" />
+      <repository url="http://download.eclipse.org/releases/neon/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/neon/" />
       <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
       <repository url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
-      <repository url="http://download.eclipse.org/releases/neon/201612211000" />
     </setupTask>
     <description> This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
   </version>
@@ -416,8 +413,7 @@
       <requirement name="org.jkiss.dbeaver.ext.oracle.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.runtime.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.wmi.feature.feature.group" />
-      <repository url="http://download.eclipse.org/releases/mars/201602261000" />
-      <repository url="http://download.eclipse.org/releases/neon/201612211000" />
+      <repository url="http://download.eclipse.org/releases/neon/" />
       <repository url="http://dbeaver.jkiss.org/update/latest/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
@@ -450,7 +446,7 @@
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.python.pydev.feature.feature.group" />
       <requirement name="org.python.pydev.feature.source.feature.group" />
-      <repository url="http://download.eclipse.org/releases/neon/201612211000" />
+      <repository url="http://download.eclipse.org/releases/neon/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/neon" />
       <repository url="http://www.pydev.org/updates/" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
@@ -485,7 +481,7 @@
       <requirement name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.epic.feature.main.feature.group" />
-      <repository url="http://download.eclipse.org/releases/neon/201612211000" />
+      <repository url="http://download.eclipse.org/releases/neon/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/neon" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
       <repository url="http://www.epic-ide.org/updates/" />
@@ -513,7 +509,7 @@
       <repository url="http://download.eclipse.org/technology/epp/packages/mars/" />
       <repository url="http://community.polarion.com/projects/subversive/download/eclipse/5.0/update-site/" />
       <repository url="http://dist.springsource.com/release/TOOLS/update/e4.5/" />
-      <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
+      <repository url="http://download.eclipse.org/buildship/updates/e45/releases" />
     </setupTask>
     <description> This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
   </version>
