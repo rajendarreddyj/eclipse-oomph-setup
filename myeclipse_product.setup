@@ -400,21 +400,49 @@
     </setupTask>
     <description> This Eclipse installation provides cool stuff for Java Development with JBoss Tools</description>
   </version>
-  <version name="dbeaverce" label="dbeaver Community Edition ( Neon - Eclipse Platform)" requiredJavaVersion="1.7">
+  <version name="dbeaverce" label="dbeaver Community Edition ( Neon - Eclipse Platform)" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse Platform with dbeaver Community Edition (Neon)">
       <requirement name="org.eclipse.platform.ide" versionRange="[4.6.0,4.7.0)" />
       <requirement name="org.eclipse.platform.feature.group" versionRange="[4.6.0,4.7.0)" />
       <requirement name="org.eclipse.rcp.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.equinox.p2.rcp.feature.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.jkiss.dbeaver.core.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.runtime.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.db2.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.exasol.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.generic.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.mysql.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.oracle.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.runtime.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.wmi.feature.feature.group" />
       <repository url="http://download.eclipse.org/releases/neon/" />
       <repository url="http://dbeaver.jkiss.org/update/latest/" />
+    </setupTask>
+    <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
+      <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
+    </setupTask>
+  </version>
+  <version name="dbeaveree" label="dbeaver Enterprise Edition ( Neon - Eclipse Platform)" requiredJavaVersion="1.8">
+    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse Platform with dbeaver Enterprise Edition (Neon)">
+      <requirement name="org.eclipse.platform.ide" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.platform.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.rcp.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.equinox.p2.rcp.feature.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
+      <requirement name="org.jkiss.dbeaver.core.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.runtime.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.ext.db2.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.ext.exasol.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.ext.generic.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.ext.mysql.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.ext.oracle.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.ext.wmi.feature.feature.group" />
+      <requirement name="com.dbeaver.enterprise.feature.feature.group" />
+      <requirement name="com.dbeaver.ent.cassandra.feature.feature.group" />
+      <requirement name="com.dbeaver.ent.mongodb.feature.feature.group" />
+      <requirement name="com.dbeaver.ent.redis.feature.feature.group" />
+      <repository url="http://download.eclipse.org/releases/neon/" />
+      <repository url="http://dbeaver.jkiss.org/update-ee/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
       <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
@@ -444,6 +472,7 @@
       <requirement name="org.eclipse.recommenders.rcp.feature.feature.group" />
       <requirement name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.python.pydev.feature.feature.group" />
       <requirement name="org.python.pydev.feature.source.feature.group" />
       <repository url="http://download.eclipse.org/releases/neon/" />
@@ -480,6 +509,7 @@
       <requirement name="org.eclipse.recommenders.rcp.feature.feature.group" />
       <requirement name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.epic.feature.main.feature.group" />
       <repository url="http://download.eclipse.org/releases/neon/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/neon" />
