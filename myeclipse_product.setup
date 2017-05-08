@@ -29,7 +29,7 @@
     vm="true">
     <description>Set JAVAHL library of ${scope.product.label}</description>
   </setupTask>
-  <version name="Oxygen" label="Oxygen (Eclipse IDE for Java EE Developers)" requiredJavaVersion="1.8">
+  <version name="OxygenJavaEE" label="Oxygen (Eclipse IDE for Java EE Developers)" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java EE Developers (Oxygen)">
       <requirement name="epp.package.jee" versionRange="[4.7.0,4.8.0)" />
       <requirement name="org.eclipse.platform.feature.group" versionRange="[4.7.0,4.8.0)" />
@@ -109,9 +109,10 @@
     <setupTask xsi:type="setup:EclipseIniTask" option="--add-modules" value="=java.se.ee" vm="true">
       <description>Java 9 modules</description>
     </setupTask>
-    <description> This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
+    <description>Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
+      EE, JPA, JSF, Mylyn, EGit and others.</description>
   </version>
-  <version name="Neon" label="Neon (Eclipse IDE for Java  EE Developers)" requiredJavaVersion="1.8">
+  <version name="NeonJavaEE" label="Neon (Eclipse IDE for Java  EE Developers)" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java EE Developers (Neon)">
       <requirement name="epp.package.jee" versionRange="[4.6.0,4.7.0)" />
       <requirement name="org.eclipse.platform.feature.group" versionRange="[4.6.0,4.7.0)" />
@@ -188,9 +189,138 @@
       <repository url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
-    <description> This Eclipse installation provides cool stuff for Java/Java EE Development.</description>
+    <description>Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
+      EE, JPA, JSF, Mylyn, EGit and others.</description>
   </version>
-  <version name="Spring" label="Spring (Neon-Eclipse IDE for Java EE Developers)" requiredJavaVersion="1.8">
+  <version name="NeonCNCPP" label="Neon (Eclipse IDE for C/C++ Developers)" requiredJavaVersion="1.8">
+    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for C/C++ Developers (Neon)">
+      <requirement name="epp.package.cpp" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.platform.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.rcp.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.cdt.autotools.feature.group" />
+      <requirement name="org.eclipse.cdt.build.crossgcc.feature.group" />
+      <requirement name="org.eclipse.cdt.debug.standalone.feature.group" />
+      <requirement name="org.eclipse.cdt.debug.ui.memory.feature.group" />
+      <requirement name="org.eclipse.cdt.feature.group" />
+      <requirement name="org.eclipse.cdt.launch.remote.feature.group" />
+      <requirement name="org.eclipse.cdt.mylyn.feature.group" />
+      <requirement name="org.eclipse.egit.feature.group" />
+      <requirement name="org.eclipse.linuxtools.cdt.libhover.devhelp.feature.feature.group" />
+      <requirement name="org.eclipse.linuxtools.cdt.libhover.feature.feature.group" />
+      <requirement name="org.eclipse.linuxtools.changelog.c.feature.group" />
+      <requirement name="org.eclipse.linuxtools.gcov.feature.group" />
+      <requirement name="org.eclipse.linuxtools.gprof.feature.feature.group" />
+      <requirement name="org.eclipse.linuxtools.rpm.feature.group" />
+      <requirement name="org.eclipse.linuxtools.valgrind.feature.group" />
+      <requirement name="org.eclipse.mylyn.bugzilla_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.context_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.ide_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.team_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn_feature.feature.group" />
+      <requirement name="org.eclipse.rse.feature.group" />
+      <requirement name="org.eclipse.tracecompass.gdbtrace.feature.group" />
+      <requirement name="org.eclipse.tracecompass.lttng2.control.feature.group" />
+      <requirement name="org.eclipse.tracecompass.lttng2.kernel.feature.group" />
+      <requirement name="org.eclipse.tracecompass.lttng2.ust.feature.group" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/neon" />
+      <repository url="http://download.eclipse.org/releases/neon/" />
+    </setupTask>
+    <description>An IDE for C/C++ developers with Mylyn integration.</description>
+  </version>
+  <version name="NeonJavaScript" label="Neon (Eclipse IDE for JavaScript and Web Developers)"
+    requiredJavaVersion="1.8">
+    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for JavaScript and Web Developers (Neon)">
+      <requirement name="epp.package.javascript" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.platform.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.rcp.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.egit.feature.group" />
+      <requirement name="org.eclipse.egit.gitflow.feature.feature.group" />
+      <requirement name="org.eclipse.egit.mylyn.feature.group" />
+      <requirement name="org.eclipse.epp.package.common.feature.feature.group" />
+      <requirement name="org.eclipse.equinox.p2.user.ui.feature.group" />
+      <requirement name="org.eclipse.help.feature.group" />
+      <requirement name="org.eclipse.mylyn.bugzilla_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.context_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.github.feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.ide_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn_feature.feature.group" />
+      <requirement name="org.eclipse.rse.feature.group" />
+      <requirement name="org.eclipse.thym.feature.feature.group" />
+      <requirement name="org.eclipse.tm.terminal.feature.feature.group" />
+      <requirement name="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group" />
+      <requirement name="org.eclipse.wst.jsdt.feature.feature.group" />
+      <requirement name="org.eclipse.wst.json_ui.feature.feature.group" />
+      <requirement name="org.eclipse.wst.server_adapters.feature.feature.group" />
+      <requirement name="org.eclipse.wst.server_ui.feature.feature.group" />
+      <requirement name="org.eclipse.wst.web_ui.feature.feature.group" />
+      <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/neon" />
+      <repository url="http://download.eclipse.org/releases/neon/" />
+    </setupTask>
+    <description>The essential tools for any JavaScript developer, including JavaScript, HTML, CSS, XML languages
+      support, Git client, and Mylyn.</description>
+  </version>
+  <version name="NeonReporting" label="Neon (Eclipse IDE for Java and Report Developers)" requiredJavaVersion="1.8">
+    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java and Report Developers (Neon)">
+      <requirement name="epp.package.reporting" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.platform.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.rcp.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.birt.chart.cshelp.feature.group" />
+      <requirement name="org.eclipse.birt.cshelp.feature.group" />
+      <requirement name="org.eclipse.birt.doc.feature.group" />
+      <requirement name="org.eclipse.birt.example.feature.group" />
+      <requirement name="org.eclipse.birt.feature.group" />
+      <requirement name="org.eclipse.datatools.common.doc.user.feature.group" />
+      <requirement name="org.eclipse.datatools.connectivity.doc.user.feature.group" />
+      <requirement name="org.eclipse.datatools.connectivity.feature.feature.group" />
+      <requirement name="org.eclipse.datatools.doc.user.feature.group" />
+      <requirement name="org.eclipse.datatools.enablement.feature.feature.group" />
+      <requirement name="org.eclipse.datatools.intro.feature.group" />
+      <requirement name="org.eclipse.datatools.modelbase.feature.feature.group" />
+      <requirement name="org.eclipse.datatools.sqldevtools.feature.feature.group" />
+      <requirement name="org.eclipse.datatools.sqltools.doc.user.feature.group" />
+      <requirement name="org.eclipse.jdt.feature.group" />
+      <requirement name="org.eclipse.jpt.common.eclipselink.feature.feature.group" />
+      <requirement name="org.eclipse.jpt.common.feature.feature.group" />
+      <requirement name="org.eclipse.jpt.dbws.eclipselink.feature.feature.group" />
+      <requirement name="org.eclipse.jpt.jaxb.eclipselink.feature.feature.group" />
+      <requirement name="org.eclipse.jpt.jaxb.feature.feature.group" />
+      <requirement name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" />
+      <requirement name="org.eclipse.jpt.jpa.feature.feature.group" />
+      <requirement name="org.eclipse.jsf.feature.feature.group" />
+      <requirement name="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" />
+      <requirement name="org.eclipse.jst.enterprise_ui.feature.feature.group" />
+      <requirement name="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group" />
+      <requirement name="org.eclipse.jst.server_adapters.ext.feature.feature.group" />
+      <requirement name="org.eclipse.jst.server_adapters.feature.feature.group" />
+      <requirement name="org.eclipse.jst.server_ui.feature.feature.group" />
+      <requirement name="org.eclipse.jst.web_ui.feature.feature.group" />
+      <requirement name="org.eclipse.jst.webpageeditor.feature.feature.group" />
+      <requirement name="org.eclipse.jst.ws.axis2tools.feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.bugzilla_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.context_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.ide_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.java_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
+      <requirement name="org.eclipse.mylyn_feature.feature.group" />
+      <requirement name="org.eclipse.rse.feature.group" />
+      <requirement name="org.eclipse.rse.useractions.feature.group" />
+      <requirement name="org.eclipse.tm.terminal.feature.feature.group" />
+      <requirement name="org.eclipse.wst.common.fproj.feature.group" />
+      <requirement name="org.eclipse.wst.jsdt.feature.feature.group" />
+      <requirement name="org.eclipse.wst.server_adapters.feature.feature.group" />
+      <requirement name="org.eclipse.wst.web_ui.feature.feature.group" />
+      <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
+      <requirement name="org.eclipse.wst.xsl.feature.feature.group" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/neon" />
+      <repository url="http://download.eclipse.org/releases/neon/" />
+    </setupTask>
+    <description>Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that
+      also have reporting needs.</description>
+  </version>
+  <version name="Spring" label="Spring (Neon - Eclipse IDE for Java EE Developers)" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java EE Developers with Spring (Neon)">
       <requirement name="epp.package.jee" versionRange="[4.6.0,4.7.0)" />
       <requirement name="org.eclipse.platform.feature.group" versionRange="[4.6.0,4.7.0)" />
@@ -521,7 +651,7 @@
     </setupTask>
     <description></description>
   </version>
-  <version name="mars" label="Mars (Eclipse IDE for Java EE Developers)" requiredJavaVersion="1.7">
+  <version name="MarsJavaEE" label="Mars (Eclipse IDE for Java EE Developers)" requiredJavaVersion="1.7">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java EE Developers (Mars)">
       <requirement name="epp.package.jee" versionRange="[4.5.0,4.6.0)" />
       <requirement name="org.eclipse.platform.feature.group" versionRange="[4.5.0,4.6.0)" />
