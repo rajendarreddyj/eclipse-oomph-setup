@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<setup:Product xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:setup="http://www.eclipse.org/oomph/setup/1.0" xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0" name="myeclipse"
-  label="myeclipse">
+<setup:Product xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+  xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0" name="myeclipse" label="myeclipse">
   <annotation source="http://www.eclipse.org/oomph/setup/BrandingInfo">
     <detail key="folderName">
       <value>eclipse</value>
@@ -14,7 +14,8 @@
   <setupTask xsi:type="setup.p2:P2Task">
     <requirement name="org.eclipse.oomph.setup.feature.group" />
     <repository url="${oomph.update.url}" />
-    <repository url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
+    <repository
+      url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
     <repository url="https://raw.githubusercontent.com/ecd-plugin/update/master/" />
     <repository url="http://update.eclemma.org/" />
   </setupTask>
@@ -26,8 +27,8 @@
   <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="1024m" vm="true">
     <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
   </setupTask>
-  <setupTask xsi:type="setup:EclipseIniTask" option="-Djava.library.path" value="=/usr/lib/x86_64-linux-gnu/jni"
-    vm="true">
+  <setupTask xsi:type="setup:EclipseIniTask" option="-Djava.library.path"
+    value="=/usr/lib/x86_64-linux-gnu/jni" vm="true">
     <description>Set JAVAHL library of ${scope.product.label}</description>
   </setupTask>
   <version name="JavaEE" label="Eclipse IDE for Java  EE Developers" requiredJavaVersion="1.8">
@@ -108,11 +109,11 @@
       <requirement name="org.sf.feeling.decompiler.jd.feature.group"
         filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
-      <repository url="http://download.eclipse.org/releases/oxygen/" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/oxygen/" />
+      <repository url="http://download.eclipse.org/releases/photon/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/photon/" />
       <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
-      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.7/" />
-      <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
+      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.8/" />
+      <repository url="http://download.eclipse.org/buildship/updates/e47/releases" />
     </setupTask>
     <description> Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
       EE, JPA, JSF, Mylyn, EGit and others.
@@ -149,8 +150,8 @@
       <requirement name="org.eclipse.tracecompass.lttng2.control.feature.group" />
       <requirement name="org.eclipse.tracecompass.lttng2.kernel.feature.group" />
       <requirement name="org.eclipse.tracecompass.lttng2.ust.feature.group" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/oxygen" />
-      <repository url="http://download.eclipse.org/releases/oxygen/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/photon" />
+      <repository url="http://download.eclipse.org/releases/photon/" />
     </setupTask>
     <description>An IDE for C/C++ developers with Mylyn integration.</description>
   </version>
@@ -180,8 +181,8 @@
       <requirement name="org.eclipse.wst.server_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.web_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/oxygen" />
-      <repository url="http://download.eclipse.org/releases/oxygen/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/photon" />
+      <repository url="http://download.eclipse.org/releases/photon/" />
     </setupTask>
     <description> The essential tools for any JavaScript developer, including JavaScript, HTML, CSS, XML languages
       support, Git client, and Mylyn.
@@ -239,8 +240,8 @@
       <requirement name="org.eclipse.wst.web_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xsl.feature.feature.group" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/oxygen" />
-      <repository url="http://download.eclipse.org/releases/oxygen/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/photon" />
+      <repository url="http://download.eclipse.org/releases/photon/" />
     </setupTask>
     <description> Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that
       also have reporting needs.
@@ -345,11 +346,11 @@
       <requirement name="org.sf.feeling.decompiler.jd.feature.group"
         filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
-      <repository url="http://download.eclipse.org/releases/oxygen" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/oxygen/" />
+      <repository url="http://download.eclipse.org/releases/photon" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/photon/" />
       <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
-      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.7/" />
-      <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
+      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.8/" />
+      <repository url="http://download.eclipse.org/buildship/updates/e47/releases" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="2048m" vm="true">
       <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
@@ -456,11 +457,11 @@
       <requirement name="org.sf.feeling.decompiler.jd.feature.group"
         filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
-      <repository url="http://download.eclipse.org/releases/oxygen" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/oxygen/" />
+      <repository url="http://download.eclipse.org/releases/photon" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/photon/" />
       <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
-      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.7/" />
-      <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
+      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.8/" />
+      <repository url="http://download.eclipse.org/buildship/updates/e47/releases" />
       <repository url="https://devstudio.redhat.com/10.0/stable/updates/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="2048m" vm="true">
@@ -483,7 +484,7 @@
       <requirement name="org.jkiss.dbeaver.ext.mysql.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.oracle.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.wmi.feature.feature.group" />
-      <repository url="http://download.eclipse.org/releases/oxygen/" />
+      <repository url="http://download.eclipse.org/releases/photon/" />
       <repository url="http://dbeaver.jkiss.org/update/latest/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
@@ -509,7 +510,7 @@
       <requirement name="com.dbeaver.ent.cassandra.feature.feature.group" />
       <requirement name="com.dbeaver.ent.mongodb.feature.feature.group" />
       <requirement name="com.dbeaver.ent.redis.feature.feature.group" />
-      <repository url="http://download.eclipse.org/releases/oxygen/" />
+      <repository url="http://download.eclipse.org/releases/photon/" />
       <repository url="http://dbeaver.jkiss.org/update-ee/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
@@ -527,7 +528,7 @@
       <requirement name="org.apache.directory.studio.ldapbrowser.feature.feature.group" />
       <requirement name="org.apache.directory.studio.ldifeditor.feature.feature.group" />
       <requirement name="org.apache.directory.studio.schemaeditor.feature.feature.group" />
-      <repository url="http://download.eclipse.org/releases/oxygen/" />
+      <repository url="http://download.eclipse.org/releases/photon/" />
       <repository url="http://directory.apache.org/studio/update/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
@@ -561,10 +562,10 @@
       <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.python.pydev.feature.feature.group" />
       <requirement name="org.python.pydev.feature.source.feature.group" />
-      <repository url="http://download.eclipse.org/releases/oxygen/" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/oxygen" />
+      <repository url="http://download.eclipse.org/releases/photon/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/photon" />
       <repository url="http://www.pydev.org/updates/" />
-      <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
+      <repository url="http://download.eclipse.org/buildship/updates/e47/releases" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
       <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
@@ -597,9 +598,9 @@
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.epic.feature.main.feature.group" />
-      <repository url="http://download.eclipse.org/releases/oxygen/" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/oxygen" />
-      <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
+      <repository url="http://download.eclipse.org/releases/photon/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/photon" />
+      <repository url="http://download.eclipse.org/buildship/updates/e47/releases" />
       <repository url="http://www.epic-ide.org/updates/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
