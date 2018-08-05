@@ -124,9 +124,6 @@
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xsl.feature.feature.group" />
       <requirement name="org.springframework.ide.eclipse.feature.feature.group" />
-      <requirement name="org.eclipse.team.svn.feature.group" />
-      <requirement name="org.polarion.eclipse.team.svn.connector.feature.group" />
-      <requirement name="org.polarion.eclipse.team.svn.connector.svnkit18.feature.group" />
       <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" />
       <requirement name="org.eclipse.buildship.feature.group" />
       <requirement name="org.eclipse.eclemma.feature.feature.group" />
@@ -139,7 +136,6 @@
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
       <repository url="http://download.eclipse.org/releases/photon/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/photon/" />
-      <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
       <repository url="http://dist.springsource.com/release/TOOLS/update/e4.8/" />
       <repository url="http://download.eclipse.org/buildship/updates/e47/releases" />
     </setupTask>
@@ -424,9 +420,6 @@
       <requirement name="org.sonatype.m2e.buildhelper.feature.feature.group" />
       <requirement name="org.sonatype.m2e.mavenarchiver.feature.feature.group" />
       <requirement name="org.jboss.tools.m2e.wro4j.feature.feature.group" />
-      <requirement name="org.eclipse.team.svn.feature.group" />
-      <requirement name="org.polarion.eclipse.team.svn.connector.feature.group" />
-      <requirement name="org.polarion.eclipse.team.svn.connector.svnkit18.feature.group" />
       <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" />
       <requirement name="org.eclipse.buildship.feature.group" />
       <requirement name="org.sf.feeling.decompiler.feature.group" />
@@ -438,7 +431,6 @@
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
       <repository url="http://download.eclipse.org/releases/photon" />
       <repository url="http://download.eclipse.org/technology/epp/packages/photon/" />
-      <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
       <repository url="http://dist.springsource.com/release/TOOLS/update/e4.8/" />
       <repository url="http://download.eclipse.org/buildship/updates/e47/releases" />
     </setupTask>
@@ -563,9 +555,7 @@
       <requirement name="org.sonatype.m2e.mavenarchiver.feature.feature.group" />
       <requirement name="org.jboss.tools.m2e.wro4j.feature.feature.group" />
       <requirement name="com.jboss.devstudio.core.feature.feature.group" />
-      <requirement name="org.eclipse.team.svn.feature.group" />
-      <requirement name="org.polarion.eclipse.team.svn.connector.feature.group" />
-      <requirement name="org.polarion.eclipse.team.svn.connector.svnkit18.feature.group" />
+      <requirement name="com.jboss.devstudio.fuse.feature.feature.group" />
       <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" />
       <requirement name="org.eclipse.buildship.feature.group" />
       <requirement name="org.sf.feeling.decompiler.feature.group" />
@@ -577,10 +567,9 @@
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
       <repository url="http://download.eclipse.org/releases/photon" />
       <repository url="http://download.eclipse.org/technology/epp/packages/photon/" />
-      <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
       <repository url="http://dist.springsource.com/release/TOOLS/update/e4.8/" />
       <repository url="http://download.eclipse.org/buildship/updates/e47/releases" />
-      <repository url="https://devstudio.redhat.com/10.0/stable/updates/" />
+      <repository url="https://devstudio.redhat.com/12/stable/updates/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="2048m" vm="true">
       <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
