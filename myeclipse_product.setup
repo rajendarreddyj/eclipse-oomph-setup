@@ -31,11 +31,11 @@
     value="=/usr/lib/x86_64-linux-gnu/jni" vm="true">
     <description>Set JAVAHL library of ${scope.product.label}</description>
   </setupTask>
-  <version name="JavaEE" label="Eclipse IDE for Java  EE Developers" requiredJavaVersion="1.8">
-    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java EE Developers">
-      <requirement name="epp.package.jee" />
-      <requirement name="org.eclipse.platform.feature.group" />
-      <requirement name="org.eclipse.rcp.feature.group" />
+  <version name="JavaEE" label="Eclipse IDE for Enterprise Java Developers" requiredJavaVersion="1.8">
+    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Enterprise Java Developers">
+      <requirement name="epp.package.jee" versionRange="[4.13.0,5.0.0)" />
+      <requirement name="org.eclipse.platform.feature.group" versionRange="[4.13.0,5.0.0)" />
+      <requirement name="org.eclipse.rcp.feature.group" versionRange="[4.13.0,5.0.0)" />
       <requirement name="org.eclipse.buildship.feature.group" />
       <requirement name="org.eclipse.cft.server.core.feature.feature.group" />
       <requirement name="org.eclipse.cft.server.ui.feature.feature.group" />
@@ -81,7 +81,6 @@
       <requirement name="org.eclipse.jdt.feature.group" />
       <requirement name="org.eclipse.jpt.common.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.common.feature.feature.group" />
-      <requirement name="org.eclipse.jpt.dbws.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jaxb.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jaxb.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" />
@@ -112,8 +111,6 @@
       <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
       <requirement name="org.eclipse.mylyn_feature.feature.group" />
       <requirement name="org.eclipse.pde.feature.group" />
-      <requirement name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group" />
-      <requirement name="org.eclipse.recommenders.rcp.feature.feature.group" />
       <requirement name="org.eclipse.tips.feature.feature.group" />
       <requirement name="org.eclipse.tm.terminal.feature.feature.group" />
       <requirement name="org.eclipse.wst.common.fproj.feature.group" />
@@ -123,7 +120,12 @@
       <requirement name="org.eclipse.wst.web_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xsl.feature.feature.group" />
-      <requirement name="org.springframework.ide.eclipse.feature.feature.group" />
+      <requirement name="org.springsource.ide.eclipse.commons.livexp" />
+      <requirement name="org.springsource.ide.eclipse.commons.ui" />
+      <requirement name="org.springsource.ide.eclipse.commons.core" />
+      <requirement name="org.springsource.ide.eclipse.commons.frameworks.ui" />
+      <requirement name="org.springsource.ide.eclipse.commons.frameworks.core" />
+      <requirement name="org.springframework.boot.ide.branding.feature.feature.group" />
       <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" />
       <requirement name="org.eclipse.buildship.feature.group" />
       <requirement name="org.eclipse.eclemma.feature.feature.group" />
@@ -270,7 +272,6 @@
       <requirement name="org.eclipse.jdt.feature.group" />
       <requirement name="org.eclipse.jpt.common.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.common.feature.feature.group" />
-      <requirement name="org.eclipse.jpt.dbws.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jaxb.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jaxb.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" />
@@ -355,7 +356,6 @@
       <requirement name="org.eclipse.jdt.feature.group" />
       <requirement name="org.eclipse.jpt.common.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.common.feature.feature.group" />
-      <requirement name="org.eclipse.jpt.dbws.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jaxb.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jaxb.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" />
@@ -386,8 +386,6 @@
       <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
       <requirement name="org.eclipse.mylyn_feature.feature.group" />
       <requirement name="org.eclipse.pde.feature.group" />
-      <requirement name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group" />
-      <requirement name="org.eclipse.recommenders.rcp.feature.feature.group" />
       <requirement name="org.eclipse.tips.feature.feature.group" />
       <requirement name="org.eclipse.tm.terminal.feature.feature.group" />
       <requirement name="org.eclipse.wst.common.fproj.feature.group" />
@@ -489,7 +487,6 @@
       <requirement name="org.eclipse.jdt.feature.group" />
       <requirement name="org.eclipse.jpt.common.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.common.feature.feature.group" />
-      <requirement name="org.eclipse.jpt.dbws.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jaxb.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jaxb.feature.feature.group" />
       <requirement name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" />
@@ -520,8 +517,6 @@
       <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
       <requirement name="org.eclipse.mylyn_feature.feature.group" />
       <requirement name="org.eclipse.pde.feature.group" />
-      <requirement name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group" />
-      <requirement name="org.eclipse.recommenders.rcp.feature.feature.group" />
       <requirement name="org.eclipse.tips.feature.feature.group" />
       <requirement name="org.eclipse.tm.terminal.feature.feature.group" />
       <requirement name="org.eclipse.wst.common.fproj.feature.group" />
@@ -583,42 +578,14 @@
       <requirement name="org.eclipse.rcp.feature.group" />
       <requirement name="org.eclipse.equinox.p2.rcp.feature.feature.group" />
       <requirement name="org.eclipse.epp.mpc.feature.group" />
-      <requirement name="org.jkiss.dbeaver.core.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.runtime.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.db2.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.exasol.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.generic.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.mysql.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.oracle.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.wmi.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.ide.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.debug.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.git.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.ext.office.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.net.sshj.feature.feature.group" />
+      <requirement name="org.jkiss.dbeaver.ext.ui.svg.feature.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
       <repository url="http://dbeaver.jkiss.org/update/latest/" />
-    </setupTask>
-    <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
-      <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
-    </setupTask>
-  </version>
-  <version name="dbeaveree" label="dbeaver Enterprise Edition" requiredJavaVersion="1.8">
-    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse Platform with dbeaver Enterprise Edition">
-      <requirement name="org.eclipse.platform.ide" />
-      <requirement name="org.eclipse.platform.feature.group" />
-      <requirement name="org.eclipse.rcp.feature.group" />
-      <requirement name="org.eclipse.equinox.p2.rcp.feature.feature.group" />
-      <requirement name="org.eclipse.epp.mpc.feature.group" />
-      <requirement name="org.jkiss.dbeaver.core.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.runtime.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.db2.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.exasol.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.generic.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.mysql.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.oracle.feature.feature.group" />
-      <requirement name="org.jkiss.dbeaver.ext.wmi.feature.feature.group" />
-      <requirement name="com.dbeaver.enterprise.feature.feature.group" />
-      <requirement name="com.dbeaver.ent.cassandra.feature.feature.group" />
-      <requirement name="com.dbeaver.ent.mongodb.feature.feature.group" />
-      <requirement name="com.dbeaver.ent.redis.feature.feature.group" />
-      <repository url="http://download.eclipse.org/releases/latest/" />
-      <repository url="http://dbeaver.jkiss.org/update-ee/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
       <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
@@ -662,9 +629,6 @@
       <requirement name="org.eclipse.mylyn.java_feature.feature.group" />
       <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
       <requirement name="org.eclipse.mylyn_feature.feature.group" />
-      <requirement name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group" />
-      <requirement name="org.eclipse.recommenders.rcp.feature.feature.group" />
-      <requirement name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.python.pydev.feature.feature.group" />
@@ -699,9 +663,6 @@
       <requirement name="org.eclipse.mylyn.java_feature.feature.group" />
       <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
       <requirement name="org.eclipse.mylyn_feature.feature.group" />
-      <requirement name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group" />
-      <requirement name="org.eclipse.recommenders.rcp.feature.feature.group" />
-      <requirement name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.epic.feature.main.feature.group" />
