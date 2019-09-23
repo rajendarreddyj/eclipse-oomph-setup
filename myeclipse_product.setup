@@ -14,10 +14,6 @@
   <setupTask xsi:type="setup.p2:P2Task">
     <requirement name="org.eclipse.oomph.setup.feature.group" />
     <repository url="${oomph.update.url}" />
-    <repository
-      url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
-    <repository url="https://raw.githubusercontent.com/ecd-plugin/update/master/" />
-    <repository url="http://update.eclemma.org/" />
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Doomph.setup" value="=true" vm="true" />
   <setupTask xsi:type="setup:EclipseIniTask" option="--launcher.GTK_version" value="2">
@@ -128,7 +124,7 @@
       <requirement name="org.springframework.boot.ide.branding.feature.feature.group" />
       <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" />
       <requirement name="org.eclipse.buildship.feature.group" />
-      <requirement name="org.eclipse.eclemma.feature.feature.group" />
+      <requirement name="org.sonarlint.eclipse.feature.feature.group" />
       <requirement name="org.sf.feeling.decompiler.feature.group" />
       <requirement name="org.sf.feeling.decompiler.cfr.feature.group" />
       <requirement name="org.sf.feeling.decompiler.jad.feature.group"
@@ -138,8 +134,14 @@
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://update.eclemma.org/" />
       <repository url="http://download.springsource.com/release/TOOLS/sts4/update/latest/" />
+      <repository
+        url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
+      <repository url="https://eclipse-uc.sonarlint.org" />
+      <repository url="https://raw.githubusercontent.com/ecd-plugin/update/master/" />
+      <repository url="https://devstudio.redhat.com/12/stable/updates/" />
     </setupTask>
     <description> Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
       EE, JPA, JSF, Mylyn, EGit and others.
@@ -429,6 +431,10 @@
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://update.eclemma.org/" />
+      <repository
+        url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
+      <repository url="https://raw.githubusercontent.com/ecd-plugin/update/master/" />
       <repository url="http://download.springsource.com/release/TOOLS/sts4/update/latest/" />
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
     </setupTask>
@@ -562,6 +568,10 @@
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://update.eclemma.org/" />
+      <repository
+        url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
+      <repository url="https://raw.githubusercontent.com/ecd-plugin/update/master/" />
       <repository url="http://download.springsource.com/release/TOOLS/sts4/update/latest/" />
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
       <repository url="https://devstudio.redhat.com/12/stable/updates/" />
