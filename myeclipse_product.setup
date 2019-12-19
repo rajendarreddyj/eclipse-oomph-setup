@@ -133,7 +133,7 @@
         filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/2019-12/" />
       <repository url="http://update.eclemma.org/" />
       <repository url="http://download.springsource.com/release/TOOLS/sts4/update/latest/" />
       <repository
@@ -187,7 +187,7 @@
       <requirement name="org.eclipse.tracecompass.lttng2.control.feature.group" />
       <requirement name="org.eclipse.tracecompass.lttng2.kernel.feature.group" />
       <requirement name="org.eclipse.tracecompass.lttng2.ust.feature.group" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/2019-12/" />
       <repository url="http://download.eclipse.org/releases/latest/" />
     </setupTask>
     <description>An IDE for C/C++ developers with Mylyn integration.</description>
@@ -218,7 +218,7 @@
       <requirement name="org.eclipse.wst.server_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.web_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/2019-12/" />
       <repository url="http://download.eclipse.org/releases/latest/" />
     </setupTask>
     <description> The essential tools for any JavaScript developer, including JavaScript, HTML, CSS, XML languages
@@ -301,7 +301,7 @@
       <requirement name="org.eclipse.wst.web_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
       <requirement name="org.eclipse.wst.xsl.feature.feature.group" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/2019-12/" />
       <repository url="http://download.eclipse.org/releases/latest/" />
     </setupTask>
     <description> Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that
@@ -430,7 +430,7 @@
         filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/2019-12/" />
       <repository url="http://update.eclemma.org/" />
       <repository
         url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
@@ -567,7 +567,7 @@
         filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/2019-12/" />
       <repository url="http://update.eclemma.org/" />
       <repository
         url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
@@ -644,7 +644,7 @@
       <requirement name="org.python.pydev.feature.feature.group" />
       <requirement name="org.python.pydev.feature.source.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/2019-12/" />
       <repository url="http://www.pydev.org/updates/" />
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
     </setupTask>
@@ -677,7 +677,7 @@
       <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.epic.feature.main.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/2019-09/" />
+      <repository url="http://download.eclipse.org/technology/epp/packages/2019-12/" />
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
       <repository url="http://www.epic-ide.org/updates/" />
     </setupTask>
