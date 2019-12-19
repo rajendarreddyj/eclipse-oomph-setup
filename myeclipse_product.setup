@@ -74,6 +74,7 @@
       <requirement name="org.eclipse.eclemma.feature.feature.group" />
       <requirement name="org.eclipse.egit.feature.group" />
       <requirement name="org.eclipse.egit.mylyn.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.eclipse.jdt.feature.group" />
       <requirement name="org.eclipse.jpt.common.eclipselink.feature.feature.group" />
       <requirement name="org.eclipse.jpt.common.feature.feature.group" />
@@ -167,6 +168,7 @@
       <requirement name="org.eclipse.cdt.mylyn.feature.group" />
       <requirement name="org.eclipse.cdt.qt.feature.group" />
       <requirement name="org.eclipse.cdt.testsrunner.feature.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.eclipse.egit.feature.group" />
       <requirement name="org.eclipse.linuxtools.cdt.libhover.devhelp.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.cdt.libhover.feature.feature.group" />
@@ -200,6 +202,7 @@
       <requirement name="org.eclipse.egit.feature.group" />
       <requirement name="org.eclipse.egit.gitflow.feature.feature.group" />
       <requirement name="org.eclipse.egit.mylyn.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.eclipse.epp.package.common.feature.feature.group" />
       <requirement name="org.eclipse.equinox.p2.user.ui.feature.group" />
       <requirement name="org.eclipse.help.feature.group" />
@@ -288,6 +291,7 @@
       <requirement name="org.eclipse.jst.web_ui.feature.feature.group" />
       <requirement name="org.eclipse.jst.webpageeditor.feature.feature.group" />
       <requirement name="org.eclipse.jst.ws.axis2tools.feature.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.eclipse.mylyn.bugzilla_feature.feature.group" />
       <requirement name="org.eclipse.mylyn.context_feature.feature.group" />
       <requirement name="org.eclipse.mylyn.ide_feature.feature.group" />
@@ -353,6 +357,7 @@
       <requirement name="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group" />
       <requirement name="org.eclipse.datatools.sqltools.doc.user.feature.group" />
       <requirement name="org.eclipse.eclemma.feature.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.eclipse.egit.feature.group" />
       <requirement name="org.eclipse.egit.mylyn.feature.group" />
       <requirement name="org.eclipse.jdt.feature.group" />
@@ -488,6 +493,7 @@
       <requirement name="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group" />
       <requirement name="org.eclipse.datatools.sqltools.doc.user.feature.group" />
       <requirement name="org.eclipse.eclemma.feature.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
       <requirement name="org.eclipse.egit.feature.group" />
       <requirement name="org.eclipse.egit.mylyn.feature.group" />
       <requirement name="org.eclipse.jdt.feature.group" />
