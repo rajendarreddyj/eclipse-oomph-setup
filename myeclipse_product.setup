@@ -128,6 +128,7 @@
       <requirement name="org.springsource.ide.eclipse.commons.frameworks.core" />
       <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" />
       <requirement name="org.sonarlint.eclipse.feature.feature.group" />
+      <requirement name="org.hibernate.eclipse.feature.feature.group" />
       <requirement name="org.sf.feeling.decompiler.feature.group" />
       <requirement name="org.sf.feeling.decompiler.cfr.feature.group" />
       <requirement name="org.sf.feeling.decompiler.jad.feature.group"
@@ -135,6 +136,11 @@
       <requirement name="org.sf.feeling.decompiler.jd.feature.group"
         filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
+      <requirement name="de.jcup.jenkinseditor.feature.feature.group" />
+      <requirement name="org.eclipse.linuxtools.docker.feature.feature.group" />
+      <requirement name="org.eclipse.linuxtools.vagrant.feature.feature.group" />
+      <requirement name="org.eclipse.linuxtools.docker.editor.ls.feature.feature.group" />
+      <requirement name="org.eclipse.linuxtools.jdt.docker.launcher.feature.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/2020-12/" />
       <repository url="http://update.eclemma.org/" />
@@ -145,6 +151,8 @@
       <repository url="https://eclipse-uc.sonarlint.org" />
       <repository url="https://raw.githubusercontent.com/ecd-plugin/update/master/" />
       <repository url="https://devstudio.redhat.com/12/stable/updates/" />
+      <repository url="https://dl.bintray.com/de-jcup/jenkinseditor" />
+      <repository url="https://download.eclipse.org/linuxtools/update-docker-5.1.0" />
     </setupTask>
     <description> Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
       EE, JPA, JSF, Mylyn, EGit and others.
