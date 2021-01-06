@@ -141,6 +141,7 @@
       <requirement name="org.eclipse.linuxtools.vagrant.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.docker.editor.ls.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.jdt.docker.launcher.feature.feature.group" />
+      <requirement name="com.reprezen.swagedit.feature.feature.group" />
       <repository url="http://download.eclipse.org/releases/latest/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/2020-12/" />
       <repository url="http://update.eclemma.org/" />
@@ -153,6 +154,7 @@
       <repository url="https://devstudio.redhat.com/12/stable/updates/" />
       <repository url="https://dl.bintray.com/de-jcup/jenkinseditor" />
       <repository url="https://download.eclipse.org/linuxtools/update-docker-5.1.0" />
+      <repository url="https://products.reprezen.com/swagedit/latest/" />
     </setupTask>
     <description> Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
       EE, JPA, JSF, Mylyn, EGit and others.
