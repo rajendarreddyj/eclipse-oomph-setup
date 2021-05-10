@@ -152,7 +152,7 @@
       <repository url="https://eclipse-uc.sonarlint.org" />
       <repository url="https://raw.githubusercontent.com/ecd-plugin/update/master/" />
       <repository url="https://devstudio.redhat.com/12/stable/updates/" />
-      <repository url="https://dl.bintray.com/de-jcup/jenkinseditor" />
+      <repository url="https://de-jcup.github.io/update-site-eclipse-jenkins-editor/update-site/" />
       <repository url="https://download.eclipse.org/linuxtools/update-docker-5.1.0" />
       <repository url="http://products.reprezen.com/reprezen/updates/current-release" />
     </setupTask>
