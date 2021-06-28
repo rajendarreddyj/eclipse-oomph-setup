@@ -206,40 +206,6 @@
     </setupTask>
     <description>An IDE for C/C++ developers with Mylyn integration.</description>
   </version>
-  <version name="JavaScript" label="Eclipse IDE for JavaScript and Web Developers" requiredJavaVersion="1.8">
-    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for JavaScript and Web Developers">
-      <requirement name="epp.package.javascript" />
-      <requirement name="org.eclipse.platform.feature.group" />
-      <requirement name="org.eclipse.rcp.feature.group" />
-      <requirement name="org.eclipse.egit.feature.group" />
-      <requirement name="org.eclipse.egit.gitflow.feature.feature.group" />
-      <requirement name="org.eclipse.egit.mylyn.feature.group" />
-      <requirement name="org.eclipse.epp.mpc.feature.group" />
-      <requirement name="org.eclipse.epp.package.common.feature.feature.group" />
-      <requirement name="org.eclipse.equinox.p2.user.ui.feature.group" />
-      <requirement name="org.eclipse.help.feature.group" />
-      <requirement name="org.eclipse.mylyn.bugzilla_feature.feature.group" />
-      <requirement name="org.eclipse.mylyn.context_feature.feature.group" />
-      <requirement name="org.eclipse.mylyn.github.feature.feature.group" />
-      <requirement name="org.eclipse.mylyn.ide_feature.feature.group" />
-      <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
-      <requirement name="org.eclipse.mylyn_feature.feature.group" />
-      <requirement name="org.eclipse.tips.feature.feature.group" />
-      <requirement name="org.eclipse.tm.terminal.feature.feature.group" />
-      <requirement name="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group" />
-      <requirement name="org.eclipse.wst.jsdt.feature.feature.group" />
-      <requirement name="org.eclipse.wst.json_ui.feature.feature.group" />
-      <requirement name="org.eclipse.wst.server_adapters.feature.feature.group" />
-      <requirement name="org.eclipse.wst.server_ui.feature.feature.group" />
-      <requirement name="org.eclipse.wst.web_ui.feature.feature.group" />
-      <requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
-      <repository url="http://download.eclipse.org/technology/epp/packages/2021-06/" />
-      <repository url="http://download.eclipse.org/releases/latest/" />
-    </setupTask>
-    <description> The essential tools for any JavaScript developer, including JavaScript, HTML, CSS, XML languages
-      support, Git client, and Mylyn.
-    </description>
-  </version>
   <version name="Reporting" label="Eclipse IDE for Java and Report Developers" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java and Report Developers">
       <requirement name="epp.package.reporting" />
