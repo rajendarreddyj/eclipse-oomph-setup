@@ -20,19 +20,20 @@
     <description>GTK Bug Force GTK 2 for Now</description>
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Xms" value="512m" vm="true">
-    <description> Set the heap space needed to work with the projects of
+    <description>
+      Set the heap space needed to work with the projects of
       ${scope.product.label}
     </description>
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="1024m" vm="true">
-    <description> Set the heap space needed to work with the projects of
+    <description>
+      Set the heap space needed to work with the projects of
       ${scope.product.label}
     </description>
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Djava.library.path"
     value="=/usr/lib/x86_64-linux-gnu/jni" vm="true">
-    <description>Set JAVAHL library of ${scope.product.label}
-    </description>
+    <description>Set JAVAHL library of ${scope.product.label}</description>
   </setupTask>
   <version name="JavaEE" label="Eclipse IDE for Enterprise Java Developers" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Enterprise Java Developers">
@@ -229,8 +230,7 @@
       <repository url="http://download.eclipse.org/technology/epp/packages/2022-03/" />
       <repository url="http://download.eclipse.org/releases/latest/" />
     </setupTask>
-    <description>An IDE for C/C++ developers with Mylyn integration.
-    </description>
+    <description>An IDE for C/C++ developers with Mylyn integration.</description>
   </version>
   <version name="Reporting" label="Eclipse IDE for Java and Report Developers" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java and Report Developers">
@@ -448,11 +448,13 @@
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="2048m" vm="true">
-      <description> Set the heap space needed to work with the projects of
+      <description>
+        Set the heap space needed to work with the projects of
         ${scope.product.label}
       </description>
     </setupTask>
-    <description> This Eclipse installation provides cool stuff for
+    <description>
+      This Eclipse installation provides cool stuff for
       Java/Java EE/Spring Development.
     </description>
   </version>
@@ -589,11 +591,13 @@
       <repository url="https://devstudio.redhat.com/12/stable/updates/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="2048m" vm="true">
-      <description> Set the heap space needed to work with the projects of
+      <description>
+        Set the heap space needed to work with the projects of
         ${scope.product.label}
       </description>
     </setupTask>
-    <description> This Eclipse installation provides cool stuff for Java
+    <description>
+      This Eclipse installation provides cool stuff for Java
       Development with JBoss Tools
     </description>
   </version>
@@ -614,7 +618,8 @@
       <repository url="http://dbeaver.jkiss.org/update/latest/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
-      <description> Set the heap space needed to work with the projects of
+      <description>
+        Set the heap space needed to work with the projects of
         ${scope.product.label}
       </description>
     </setupTask>
@@ -634,7 +639,8 @@
       <repository url="http://directory.apache.org/studio/update/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
-      <description> Set the heap space needed to work with the projects of
+      <description>
+        Set the heap space needed to work with the projects of
         ${scope.product.label}
       </description>
     </setupTask>
@@ -669,7 +675,8 @@
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
-      <description> Set the heap space needed to work with the projects of
+      <description>
+        Set the heap space needed to work with the projects of
         ${scope.product.label}
       </description>
     </setupTask>
@@ -704,14 +711,15 @@
       <repository url="http://www.epic-ide.org/updates/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
-      <description> Set the heap space needed to work with the projects of
+      <description>
+        Set the heap space needed to work with the projects of
         ${scope.product.label}
       </description>
     </setupTask>
     <description></description>
   </version>
-  <version name="JavaEE" label="Eclipse IDE for Everything" requiredJavaVersion="1.8">
-    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Enterprise Java Developers">
+  <version name="EveryThing" label="Eclipse IDE for Everything" requiredJavaVersion="1.8">
+    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Everything">
       <requirement name="epp.package.jee" />
       <requirement name="org.eclipse.platform.feature.group" />
       <requirement name="org.eclipse.rcp.feature.group" />
@@ -924,7 +932,8 @@
       EE, JPA, JSF, Mylyn, EGit and others.
     </description>
   </version>
-  <description> This eclipse installation provides cool stuff for
+  <description>
+    This eclipse installation provides cool stuff for
     Java/Java EE Development.
   </description>
 </setup:Product>
