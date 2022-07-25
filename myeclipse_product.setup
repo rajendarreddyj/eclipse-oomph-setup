@@ -153,7 +153,7 @@
       <repository url="https://devstudio.redhat.com/12/stable/updates/" />
       <repository url="https://de-jcup.github.io/update-site-eclipse-jenkins-editor/update-site/" />
       <repository url="https://download.eclipse.org/linuxtools/update-docker-5.7.0/" />
-      <repository url="http://products.reprezen.com/swagedit/latest/" />
+      <!-- <repository url="http://products.reprezen.com/swagedit/latest/" /> -->
     </setupTask>
     <description> Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
       EE, JPA, JSF, Mylyn, EGit and others.
@@ -432,7 +432,7 @@
       <repository url="https://devstudio.redhat.com/12/stable/updates/" />
       <repository url="https://de-jcup.github.io/update-site-eclipse-jenkins-editor/update-site/" />
       <repository url="https://download.eclipse.org/linuxtools/update-docker-5.7.0/" />
-      <repository url="http://products.reprezen.com/swagedit/latest/" />
+      <!-- <repository url="http://products.reprezen.com/swagedit/latest/" /> -->
       <repository url="http://www.epic-ide.org/updates/" />
       <repository url="http://www.pydev.org/updates/" />
       <repository url="http://dbeaver.jkiss.org/update/latest/" />
