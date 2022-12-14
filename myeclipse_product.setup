@@ -142,7 +142,7 @@
       <requirement name="org.eclipse.linuxtools.vagrant.feature.feature.group" />
       <!-- <requirement name="com.reprezen.swagedit.feature.feature.group" /> -->
       <repository url="https://download.eclipse.org/releases/latest/" />
-      <repository url="https://download.eclipse.org/technology/epp/packages/2022-06/" />
+      <repository url="https://download.eclipse.org/technology/epp/packages/2022-12/" />
       <repository url="http://update.eclemma.org/" />
       <repository url="https://download.springsource.com/release/TOOLS/sts4/update/latest/" />
       <repository
@@ -195,7 +195,7 @@
       <requirement name="org.eclipse.tracecompass.lttng2.control.feature.group" />
       <requirement name="org.eclipse.tracecompass.lttng2.kernel.feature.group" />
       <requirement name="org.eclipse.tracecompass.lttng2.ust.feature.group" />
-      <repository url="https://download.eclipse.org/technology/epp/packages/2022-06/" />
+      <repository url="https://download.eclipse.org/technology/epp/packages/2022-12/" />
       <repository url="https://download.eclipse.org/releases/latest/" />
     </setupTask>
     <description>An IDE for C/C++ developers with Mylyn integration.</description>
@@ -258,7 +258,7 @@
       <requirement name="org.python.pydev.feature.feature.group" />
       <requirement name="org.python.pydev.feature.source.feature.group" />
       <repository url="https://download.eclipse.org/releases/latest/" />
-      <repository url="https://download.eclipse.org/technology/epp/packages/2022-06/" />
+      <repository url="https://download.eclipse.org/technology/epp/packages/2022-12/" />
       <repository url="http://www.pydev.org/updates/" />
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
     </setupTask>
@@ -287,7 +287,7 @@
       <requirement name="org.eclipse.wildwebdeveloper.xml.feature.feature.group" />
       <requirement name="org.epic.feature.main.feature.group" />
       <repository url="https://download.eclipse.org/releases/latest/" />
-      <repository url="https://download.eclipse.org/technology/epp/packages/2022-06/" />
+      <repository url="https://download.eclipse.org/technology/epp/packages/2022-12/" />
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
       <repository url="http://www.epic-ide.org/updates/" />
     </setupTask>
@@ -421,7 +421,7 @@
       <requirement name="org.apache.directory.studio.ldifeditor.feature.feature.group" />
       <requirement name="org.apache.directory.studio.schemaeditor.feature.feature.group" />
       <repository url="https://download.eclipse.org/releases/latest/" />
-      <repository url="https://download.eclipse.org/technology/epp/packages/2022-06/" />
+      <repository url="https://download.eclipse.org/technology/epp/packages/2022-12/" />
       <repository url="http://update.eclemma.org/" />
       <repository url="https://download.springsource.com/release/TOOLS/sts4/update/latest/" />
       <repository
