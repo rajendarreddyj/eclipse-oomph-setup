@@ -22,7 +22,7 @@
   <setupTask xsi:type="setup:EclipseIniTask" option="-Xms" value="512m" vm="true">
     <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
   </setupTask>
-  <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="1024m" vm="true">
+  <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="2048m" vm="true">
     <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Djava.library.path"
@@ -124,7 +124,7 @@
       <requirement name="org.springsource.ide.eclipse.commons.ui" />
       <requirement name="org.springsource.ide.eclipse.commons.core" />
       <requirement name="org.springsource.ide.eclipse.commons.frameworks.ui" />
-      <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" />
+      <!-- <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" /> -->
       <requirement name="org.sonarlint.eclipse.feature.feature.group" />
       <requirement name="org.hibernate.eclipse.feature.feature.group" />
       <requirement name="org.sf.feeling.decompiler.feature.group" />
