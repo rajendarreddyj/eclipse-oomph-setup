@@ -124,23 +124,20 @@
       <requirement name="org.springsource.ide.eclipse.commons.ui" />
       <requirement name="org.springsource.ide.eclipse.commons.core" />
       <requirement name="org.springsource.ide.eclipse.commons.frameworks.ui" />
-      <!-- <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" /> -->
       <requirement name="org.sonarlint.eclipse.feature.feature.group" />
       <requirement name="org.hibernate.eclipse.feature.feature.group" />
       <requirement name="org.sf.feeling.decompiler.feature.group" />
       <requirement name="org.sf.feeling.decompiler.cfr.feature.group" />
-      <requirement name="org.sf.feeling.decompiler.jad.feature.group"
-        filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
-      <requirement name="org.sf.feeling.decompiler.jd.feature.group"
-        filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
+      <requirement name="org.sf.feeling.decompiler.fernflower.feature.group" />
+      <requirement name="org.sf.feeling.decompiler.jd.feature.group" />
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
+      <requirement name="org.sf.feeling.decompiler.vineflower.feature.group" />
       <requirement name="de.jcup.jenkinseditor.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.docker.feature.feature.group" />
-      <requirement name="org.eclipse.linuxtools.vagrant.feature.feature.group"/>
+      <requirement name="org.eclipse.linuxtools.vagrant.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.docker.editor.ls.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.jdt.docker.launcher.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.vagrant.feature.feature.group" />
-      <!-- <requirement name="com.reprezen.swagedit.feature.feature.group" /> -->
       <repository url="https://download.eclipse.org/releases/latest/" />
       <repository url="https://download.eclipse.org/technology/epp/packages/2024-03/" />
       <repository url="https://update.eclemma.org/" />
@@ -149,13 +146,14 @@
         url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
       <repository url="https://eclipse-uc.sonarlint.org" />
-      <repository url="https://raw.githubusercontent.com/ecd-plugin/update/master/" />
+      <repository url="https://ecd-plugin.github.io/update" />
       <repository url="https://devstudio.redhat.com/12/stable/updates/" />
       <repository url="https://de-jcup.github.io/update-site-eclipse-jenkins-editor/update-site/" />
       <repository url="https://download.eclipse.org/linuxtools/update-docker-5.7.0/" />
-      <!-- <repository url="http://products.reprezen.com/swagedit/latest/" /> -->
     </setupTask>
-    <description> Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
+    <description>
+      Tools for Java developers creating Java EE and Web applications, including
+      a Java IDE, tools for Java
       EE, JPA, JSF, Mylyn, EGit and others.
     </description>
   </version>
@@ -292,7 +290,9 @@
       <repository url="http://www.epic-ide.org/updates/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
-      <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
+      <description> Set the heap space needed to work with the projects
+        of ${scope.product.label}
+      </description>
     </setupTask>
     <description></description>
   </version>
@@ -396,18 +396,16 @@
       <requirement name="org.hibernate.eclipse.feature.feature.group" />
       <requirement name="org.sf.feeling.decompiler.feature.group" />
       <requirement name="org.sf.feeling.decompiler.cfr.feature.group" />
-      <requirement name="org.sf.feeling.decompiler.jad.feature.group"
-        filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
-      <requirement name="org.sf.feeling.decompiler.jd.feature.group"
-        filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))" />
+      <requirement name="org.sf.feeling.decompiler.fernflower.feature.group" />
+      <requirement name="org.sf.feeling.decompiler.jd.feature.group" />
       <requirement name="org.sf.feeling.decompiler.procyon.feature.group" />
+      <requirement name="org.sf.feeling.decompiler.vineflower.feature.group" />
       <requirement name="de.jcup.jenkinseditor.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.docker.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.vagrant.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.docker.editor.ls.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.jdt.docker.launcher.feature.feature.group" />
       <requirement name="org.eclipse.linuxtools.vagrant.feature.feature.group" />
-      <!-- <requirement name="com.reprezen.swagedit.feature.feature.group" /> -->
       <requirement name="org.epic.feature.main.feature.group" />
       <requirement name="org.python.pydev.feature.feature.group" />
       <requirement name="org.python.pydev.feature.source.feature.group" />
@@ -428,19 +426,22 @@
         url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site/" />
       <repository url="https://download.eclipse.org/buildship/updates/latest/" />
       <repository url="https://eclipse-uc.sonarlint.org" />
-      <repository url="https://raw.githubusercontent.com/ecd-plugin/update/master/" />
+      <repository url="https://ecd-plugin.github.io/update" />
       <repository url="https://devstudio.redhat.com/12/stable/updates/" />
       <repository url="https://de-jcup.github.io/update-site-eclipse-jenkins-editor/update-site/" />
-      <repository url="https://download.eclipse.org/linuxtools/update-docker-5.7.0/" />
-      <!-- <repository url="http://products.reprezen.com/swagedit/latest/" /> -->
+      <repository url="https://download.eclipse.org/linuxtools/update-docker/" />
       <repository url="http://www.epic-ide.org/updates/" />
       <repository url="http://www.pydev.org/updates/" />
       <repository url="http://dbeaver.io/update/latest/" />
       <repository url="http://directory.apache.org/studio/update/" />
     </setupTask>
-    <description> Tools for Java developers creating Java EE, Python, Perl and Web applications, including a Java IDE,
+    <description>
+      Tools for Java developers creating Java EE, Python, Perl and Web
+      applications, including a Java IDE,
       tools for Java EE, JPA, JSF, DBeaver, EGit and others.
     </description>
   </version>
-  <description> This eclipse installation provides cool stuff for Java/Java EE Development.</description>
+  <description> This eclipse installation provides cool stuff for
+    Java/Java EE Development.
+  </description>
 </setup:Product>
