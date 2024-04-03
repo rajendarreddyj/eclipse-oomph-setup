@@ -213,7 +213,7 @@
       <requirement name="org.jkiss.dbeaver.ext.office.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.ui.svg.feature.feature.group" />
       <repository url="https://download.eclipse.org/releases/latest/" />
-      <repository url="http://dbeaver.jkiss.org/update/latest/" />
+      <repository url="http://dbeaver.io/update/latest/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
       <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
@@ -435,7 +435,7 @@
       <!-- <repository url="http://products.reprezen.com/swagedit/latest/" /> -->
       <repository url="http://www.epic-ide.org/updates/" />
       <repository url="http://www.pydev.org/updates/" />
-      <repository url="http://dbeaver.jkiss.org/update/latest/" />
+      <repository url="http://dbeaver.io/update/latest/" />
       <repository url="http://directory.apache.org/studio/update/" />
     </setupTask>
     <description> Tools for Java developers creating Java EE, Python, Perl and Web applications, including a Java IDE,
